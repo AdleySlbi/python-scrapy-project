@@ -16,3 +16,16 @@ Start the virtual environment with this command :
 
 In the virtual env : 
 
+
+
+
+________________________________________
+
+
+response.xpath("//div[@class='workxp_one']").get()
+// Toute la div avec les work experience 
+
+workxp = response.xpath("//div[@class='workxp_one']")
+// assigne à une variable 
+
+workxp[0].css(".workxp_company_date > a::text").getall()
