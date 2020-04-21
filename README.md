@@ -3,7 +3,6 @@
 To start the project : 
 
 Be sure that you are in the good directory : 
-
 `cd venv`
 
 Be sure that venv is install : 

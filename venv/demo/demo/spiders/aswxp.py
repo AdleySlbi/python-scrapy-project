@@ -17,9 +17,9 @@ class aswxp(scrapy.Spider):
                 yield {
                     'job': workxp_one.css('.workxp_job::text').get(),
                     'contrat': workxp_one.css('.workxp_type::text').get(),
-                    'dates': workxp_one.css('.workxp_company_date.workxp_date::text').get(),
+                    'dates': workxp_one.css('.workxp_company_date>span:last-child::text').get(),
                     'company_name': workxp_one.css('.workxp_company_date>a::text').get(),
                     'company_url': workxp_one.css('.workxp_company_date>a::attr(href)').get(),
                     'resume': workxp_one.css('p::text').get(),
-                    'skills': workxp_one.css('.workxp_skills_wrapper').get(),
+                    'skills': workxp_one.css('.workxp_skills_wrapper>span:last-child::text').get(),
                 }
