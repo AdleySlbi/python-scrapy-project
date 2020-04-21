@@ -1,9 +1,9 @@
 import scrapy
 
-class Orpi(scrapy.Spider):
+class aswxp(scrapy.Spider):
     name = "aswxp"
 
-    start_urls = ["http://www.adleysalabi.com/"]
+    start_urls = ["http://adleysalabi.com//"]
 
     def parse(self, response):
             self.logger.info('hello this is my first spider')
